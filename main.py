@@ -136,7 +136,7 @@ if __name__ == '__main__':
     wx_id = "ofqo-uE7MMra_9NrQDDv_LHH91mY"
     success,message = check_my_ticket(wx_id)
     if success == True:
-        mailutil.send_mail("727596490@qq.com",message)
+        mailutil.send_mail("your_qq@qq.com",message)
         exit(0)
     while True:
         try:
@@ -157,7 +157,7 @@ if __name__ == '__main__':
                 success, message = check_my_ticket(wx_id)
                 if success == True:
                     logging.info(u"抢票结束")
-                    mailutil.send_mail("727596490@qq.com", message)
+                    mailutil.send_mail("your_qq@qq.com", message)
                     break
             elif text.find("抢完了".decode("utf-8")) >= 0:
                 if 12<=today.tm_hour<=18:
@@ -165,6 +165,6 @@ if __name__ == '__main__':
                 else:
                     message = u"没抢到上班的票"
                 logging.info(message)
-                mailutil.send_mail("727596490@qq.com", message)
+                mailutil.send_mail("your_qq@qq.com", message)
                 break
 
