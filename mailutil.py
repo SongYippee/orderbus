@@ -4,12 +4,6 @@ import smtplib
 from email.mime.text import MIMEText
 from email.header import Header
 
-# -*- coding: UTF-8 -*-
-
-import smtplib
-from email.mime.text import MIMEText
-from email.header import Header
-
 def send_mail(receiver,message):
     """ just send email to receiver """
     mail_server = "smtp.163.com"  # mail server
