@@ -11,6 +11,7 @@ from email.mime.text import MIMEText
 from email.header import Header
 
 def send_mail(receiver,message):
+    """ just send email to receiver """
     mail_server = "smtp.163.com"  # mail server
     mail_user = "xxxxxx@163.com"  # mail user account
     mail_code = "xxxxxx"  # mail authorization code to login use
