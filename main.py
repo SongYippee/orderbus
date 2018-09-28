@@ -114,7 +114,7 @@ def check_my_ticket(wx):
         dateStr = time.strftime("%Y-%m-%d",currentTime)
         return check_go_home_ticket(ticketList,dateStr)
     elif 19<=currentHour<=23:
-        tomorrow = time.localtime(currentTime.time()+24*3600)
+        tomorrow = time.localtime(time.time()+24*3600)
         dateStr = time.strftime("%Y-%m-%d", tomorrow)
         return check_go_work_ticket(ticketList,dateStr)
     elif 0<=currentHour<=8:
